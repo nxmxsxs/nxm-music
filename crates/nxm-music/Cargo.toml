@@ -1,0 +1,50 @@
+[package]
+name = "nxm-music"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+collections = { workspace = true }
+nxm-ffi = { workspace = true }
+# nxm-music-db-diesel = { workspace = true }
+
+anyhow = { workspace = true }
+arc-swap = { workspace = true }
+arrayvec = { workspace = true }
+blake3 = { workspace = true }
+bytes = { workspace = true }
+chrono = { workspace = true }
+cpal = { workspace = true }
+creek = { workspace = true }
+crossbeam-channel = { workspace = true }
+dirs = { workspace = true }
+env_logger = { workspace = true }
+fast-interleave = { workspace = true }
+fixed-resample = { workspace = true }
+flourish = { workspace = true }
+flourish-unsend = { workspace = true }
+flume = { workspace = true }
+futures = { workspace = true }
+imbl = { workspace = true }
+indexmap = { workspace = true }
+isoprenoid = { workspace = true }
+isoprenoid-unsend = { workspace = true }
+itertools = { workspace = true }
+lofty = { workspace = true }
+log = { workspace = true }
+# orx-concurrent-bag = { workspace = true }
+orx-linked-list = { workspace = true }
+orx-parallel = { workspace = true }
+# orx-selfref-col = { workspace = true }
+orx-split-vec = { workspace = true }
+orx-tree = { workspace = true }
+rand = { workspace = true }
+rkyv = { workspace = true }
+slotmap = { workspace = true }
+sqlx = { workspace = true }
+# symphonia = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+# uniffi = { workspace = true }
+uuid = { workspace = true }
+walkdir = { workspace = true }

@@ -1,0 +1,63 @@
+[workspace]
+resolver = "2"
+members = [
+  "crates/collections",
+  "crates/nxm-music",
+]
+
+[workspace.package]
+edition = "2024"
+
+[workspace.dependencies]
+
+collections = { path = "crates/collections" }
+nxm-music = { path = "crates/nxm-music" }
+
+
+anyhow = { version = "1.0" }
+arrayvec = { version = "0.7" }
+arc-swap = { version = "1.8" }
+async-task = { version = "4.7" }
+blake3 = { version = "1.8" }
+bytes = { version = "1.11" }
+chrono = { version = "0.4" }
+crossbeam-channel = { version = "0.5" }
+cpal = { version = "0.17" }
+creek = { version = "1.2", features = ["decode-all"] }
+diesel = { version = "2.3", features = [
+  "sqlite",
+  "returning_clauses_for_sqlite_3_35",
+] }
+diesel-derive-enum = { version = "3.0.0-beta.1", features = ["sqlite"] }
+dirs = { version = "6.0" }
+dotenvy = "0.15"
+env_logger = { version = "0.11" }
+fast-interleave = { version = "0.1" }
+fixed-resample = { version = "0.9" }
+flume = { version = "0.12" }
+futures = { version = "0.3" }
+indexmap = { version = "2.12" }
+imbl = { version = "6.1" }
+itertools = { version = "0.14" }
+lofty = { version = "0.22" }
+log = { version = "0.4" }
+orx-linked-list = { version = "4.1" }
+orx-parallel = { version = "3.4" }
+orx-split-vec = { version = "3.22" }
+orx-tree = { version = "2.1" }
+pin-project = { version = "1.1" }
+rand = { version = "0.9" }
+rkyv = { version = "0.8", features = ["uuid-1", "indexmap-2"] }
+rustc-hash = { version = "2.1" }
+slotmap = { version = "1.0" }
+sqlx = { version = "0.9.0-alpha.1", features = [
+  "runtime-tokio",
+  "tls-native-tls",
+  "sqlite",
+  "uuid",
+  "chrono",
+] }
+thiserror = { version = "2.0" }
+tokio = { version = "1.48", features = ["rt-multi-thread"] }
+uuid = { version = "1.19", features = ["v4"] }
+walkdir = { version = "2.5" }

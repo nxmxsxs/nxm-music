@@ -1,0 +1,12 @@
+[package]
+name = "collections"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+imbl = { workspace = true }
+indexmap = { workspace = true }
+orx-linked-list = { workspace = true }
+orx-tree = { workspace = true }
+rand = { workspace = true }
+rustc-hash = { workspace = true }

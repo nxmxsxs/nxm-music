@@ -1,0 +1,14 @@
+[tools]
+rust = "1.92"
+
+[env]
+DATABASE_URL = "sqlite://{{env.HOME}}/Documents/nxm-music/storage.db"
+DBEE_CONNECTIONS="""
+[
+  {
+    "name": "nxm_music",
+    "url": "{{env.HOME}}/Documents/nxm-music/storage.db",
+    "type": "sqlite"
+  }
+]
+"""
